@@ -49,7 +49,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TaptoPlate – See It. Before You Eat It.</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 <style>
 :root{
   color-scheme: dark;
@@ -151,7 +151,7 @@ button.btn{font-family:inherit;cursor:pointer}
 <div class="ar-modal" id="arModal" hidden role="dialog" aria-modal="true" aria-labelledby="arTitle">
   <div class="ar-top"><h3 id="arTitle"></h3><button class="ar-close" id="arClose" type="button">Close</button></div>
   <model-viewer id="arViewer" camera-controls auto-rotate shadow-intensity="1" exposure="1.05"
-    ar ar-modes="scene-viewer webxr quick-look" ar-scale="auto" ar-placement="floor" alt="3D dish">
+    ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ar-placement="floor" alt="3D dish">
     <button slot="ar-button" class="btn ar-slot-btn" type="button">View in AR</button>
   </model-viewer>
   <div class="ar-bar" id="arNote"></div>
